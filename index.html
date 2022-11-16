@@ -9,7 +9,7 @@
   <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
 
   <title>songbirds</title>
-<script defer src="main.d2ed20e268591ba67fd4.js"></script></head>
+<script defer src="main.95b2a21113e842d02cb4.js"></script></head>
 <body>
   <div class="paralax">
     <div id='stars'></div>
@@ -17,6 +17,20 @@
     <div id='stars3'></div>
   </div> 
   <div class="container">
+
+    <div class="result-page">
+      <div class="btn-close-result">x</div>
+      <div class="result-page__wrapper">
+        <div class="descr">congratulation!!!
+      </div>
+      <div class="line-black"></div>
+        <div class="descr"> 
+        Your score : ${counterStep}
+      </div>
+        <div class="line-black"></div>
+        <div class="score">You have passed the quiz and scored ${counterStep} out of 30   possible points</div>
+      </div>
+    </div>
 
     <div class="start-page">
       <header class="header">
@@ -62,12 +76,12 @@
         <div class="birds-menu-wrapper">
           hover to open the menu
           <div class="birds-menu">
-            <div class="birds-menu__item">warm-up</div>
-            <div class="birds-menu__item">sparrows</div>
-            <div class="birds-menu__item">forest birds</div>
-            <div class="birds-menu__item">songbirds</div>
-            <div class="birds-menu__item">birds of prey</div>
-            <div class="birds-menu__item">seabirds</div>
+            <div data-birds="0" class="birds-menu__item">warm-up</div>
+            <div data-birds="1" class="birds-menu__item">sparrows</div>
+            <div data-birds="2" class="birds-menu__item">forest birds</div>
+            <div data-birds="3" class="birds-menu__item">songbirds</div>
+            <div data-birds="4" class="birds-menu__item">birds of prey</div>
+            <div data-birds="5" class="birds-menu__item">seabirds</div>
           </div>
         </div>
 
@@ -96,9 +110,7 @@
         </div>
     </div>
 
-    <div class="result-page">
-      <div class="btn-close-result">x</div>
-    </div>
+    
     
     <div class="pop-up-wrapper">
       <div class="pop-up">
