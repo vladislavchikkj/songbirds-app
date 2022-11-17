@@ -7,10 +7,39 @@
 
   <!-- <link rel="icon" href="img/favicon.svg" type="image/svg+xml"> -->
   <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
-
+  <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
   <title>songbirds</title>
-<script defer src="main.95b2a21113e842d02cb4.js"></script></head>
+<script defer src="main.f4620dac5aa735cb091f.js"></script></head>
 <body>
+
+  <div class="preloader">
+    <div class="loader">
+      <svg class="pl" viewBox="0 0 64 64" width="64px" height="64px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000" />
+            <stop offset="100%" stop-color="#fff" />
+          </linearGradient>
+          <mask id="grad-mask">
+            <rect x="0" y="0" width="64" height="64" fill="url(#grad)" />
+          </mask>
+        </defs>
+        <circle class="pl__ring" cx="32" cy="32" r="26" fill="none" stroke="hsl(223,90%,55%)" stroke-width="12" stroke-dasharray="169.65 169.65" stroke-dashoffset="-127.24" stroke-linecap="round" transform="rotate(135)" />
+        <g fill="hsl(223,90%,55%)">
+          <circle class="pl__ball1" cx="32" cy="45" r="6" transform="rotate(14)" />
+          <circle class="pl__ball2" cx="32" cy="48" r="3" transform="rotate(-21)" />
+        </g>
+        <g mask="url(#grad-mask)">
+          <circle class="pl__ring" cx="32" cy="32" r="26" fill="none" stroke="hsl(283,90%,55%)" stroke-width="12" stroke-dasharray="169.65 169.65" stroke-dashoffset="-127.24" stroke-linecap="round" transform="rotate(135)" />
+          <g fill="hsl(283,90%,55%)">
+            <circle class="pl__ball1" cx="32" cy="45" r="6" transform="rotate(14)" />
+            <circle class="pl__ball2" cx="32" cy="48" r="3" transform="rotate(-21)" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+
   <div class="paralax">
     <div id='stars'></div>
     <div id='stars2'></div>
@@ -26,7 +55,7 @@
       <div class="line-black"></div>
         <div class="descr"> 
         Your score : ${counterStep}
-      </div>
+      </div> 
         <div class="line-black"></div>
         <div class="score">You have passed the quiz and scored ${counterStep} out of 30   possible points</div>
       </div>
@@ -43,8 +72,8 @@
           SongBirds
         </div>
         <div class="header__link">
-          <div class="resourse">game</div>
-          <div class="birds">rules</div>
+          <div class="gallery">gallery</div>
+          <div class="rules">rules</div>
         </div>
     </header>
 
@@ -60,13 +89,7 @@
       </div>
     </main>
     
-    <footer class="footer">
-      <div class="link">
-        <div class="link__git"><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md">Github</a></div>
-        <div class="link__year">2022</div>
-        <div class="link__rs"><a href="https://app.rs.school/">Rs-school</a></div>
-      </div>
-    </footer>
+    
     </div>
 
     <div class="game-page">
@@ -90,6 +113,7 @@
 
             <div class="player" id="player">
               <!-- in js -->
+              
             </div>
 
             <div class="menu" id="quiz"></div>
@@ -126,6 +150,14 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="link">
+        <div class="link__git"><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/songbird/songbird-2022q3.md">Github</a></div>
+        <div class="link__year">2022</div>
+        <div class="link__rs"><a href="https://rs.school/js/"><img src="https://katrinstom.github.io/rsschool-cv/images/logo-rsschool3.png" alt="logo"></a></div>
+      </div>
+    </footer>
   </div>
+  <script src="assets/index.js"></script>
 </body>
 </html>
